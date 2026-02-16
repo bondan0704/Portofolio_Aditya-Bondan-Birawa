@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const experienceData = [
     {
-        role: "UI/UX Designer",
+        role: "UI/UX Designer At Seven.Inc",
         location: "On-site",
         startYear: "March 2025",
         endYear: "July 2025",
@@ -14,7 +14,7 @@ const experienceData = [
         ]
     },
     {
-        role: "Graphic Designer",
+        role: "Graphic Designer At Learning With Us",
         location: "Remote",
         startYear: "March 2025",
         endYear: "September 2025",
