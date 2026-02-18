@@ -1,8 +1,6 @@
-import { NextResponse } from "next/server";
-
-const experienceData = [
+export const experienceData = [
     {
-        role: "UI/UX Designer At Seven.Inc",
+        role: "UI/UX Designer",
         location: "On-site",
         startYear: "March 2025",
         endYear: "July 2025",
@@ -14,7 +12,7 @@ const experienceData = [
         ]
     },
     {
-        role: "Graphic Designer At Learning With Us",
+        role: "Graphic Designer",
         location: "Remote",
         startYear: "March 2025",
         endYear: "September 2025",
@@ -27,7 +25,7 @@ const experienceData = [
     },
 ]
 
-const educationData = [
+export const educationData = [
     {
         date: "September 2022 - Present",
         title: "B.Sc. in Information Systems",
@@ -41,7 +39,7 @@ const educationData = [
 ];
 
 
-const projectOverview = {
+export const projectOverview = {
     caseStudies: [
         { name: "Wellnest", url: "#" },
         { name: "ScoutHire", url: "#" },
@@ -52,13 +50,4 @@ const projectOverview = {
         { name: "OrbitPay Mobile App", comingSoon: true },
         { name: "Siteflow Page Builder", comingSoon: true },
     ]
-};
-
-
-export const GET = async () => {
-    return NextResponse.json({
-        experienceData,
-        educationData,
-        projectOverview
-    });
 };

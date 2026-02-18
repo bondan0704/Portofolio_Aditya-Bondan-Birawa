@@ -1,25 +1,6 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { projectOverview as projectData } from "@/data/pageData";
 
 const ProjectOverview = () => {
-    const [projectData, setProjectData] = useState<any>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data = await res.json()
-                setProjectData(data?.projectOverview)
-            } catch (error) {
-                console.error('Error fetching services:', error)
-            }
-        }
-
-        fetchData()
-    }, [])
     // return (
     //     <section>
     //         <div className="container">
