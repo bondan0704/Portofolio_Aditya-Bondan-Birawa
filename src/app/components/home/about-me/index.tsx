@@ -1,11 +1,15 @@
 import { Badge } from "@/components/ui/badge";
+import { prefixPath } from "@/utils/paths";
 
 const AboutMe = () => {
   const servicesBedge = ["Graphic Design", "User Experience", "Mobile App Design", "Brand Identity", "Responsive Design", "Prototyping", "Illustration", "Motion Graphics", "Print Design", "UI Development", "Interactive Media"];
   return (
     <section>
       <div className="container">
-        <div className="border-x border-primary/10 bg-[url('/images/about-me/about-me-bg.svg')] bg-cover bg-center bg-no-repeat">
+        <div
+          className="border-x border-primary/10 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('${prefixPath('/images/about-me/about-me-bg.svg')}')` }}
+        >
           <div className="flex flex-col gap-9 sm:gap-11 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
             <div className="flex flex-col gap-4">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">About Me</p>

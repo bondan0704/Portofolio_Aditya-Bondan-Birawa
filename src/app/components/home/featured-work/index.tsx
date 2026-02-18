@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { featureWork } from "@/data/featureWork";
+import { prefixPath } from "@/utils/paths";
 
 const FeaturedWork = () => {
 
@@ -25,7 +26,7 @@ const FeaturedWork = () => {
                                     >
                                         <Link href={value?.url || "/"} className="overflow-hidden block aspect-[3/4] rounded-lg border border-primary/5">
                                             <Image
-                                                src={value?.image}
+                                                src={prefixPath(value?.image)}
                                                 alt={value?.title || "Project Image"}
                                                 width={490}
                                                 height={653}
