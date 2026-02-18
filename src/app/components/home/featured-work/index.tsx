@@ -26,7 +26,7 @@ const FeaturedWork = () => {
                                     >
                                         <Link href={value?.url || "/"} className="overflow-hidden block aspect-[3/4] rounded-lg border border-primary/5">
                                             <Image
-                                                src={prefixPath(value?.image)}
+                                                src={value?.image}
                                                 alt={value?.title || "Project Image"}
                                                 width={490}
                                                 height={653}
